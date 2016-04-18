@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <title>ViperDemo</title>
+                <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script>
+  			$(function() {
+    				$( ".accordion" ).accordion({
+					//event: "mouseover",
+				        collapsible: false,
+        				active: false,
+        				heightStyle: "content"
+				});
+  			});
+  		</script>
+        </head>
+        <body>
+                <div class="accordion">
+                        <h3>Alignment</h3>
+                        <div class="container-fluid">
+				<div class="row">
+                                <div class="col-md-offset-2 col-md-4">
+                                        <h4>Bad Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/align.bad.png"></img>
+                                </div>
+                                <div class="col-md-4">
+                                        <h4>Good Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/align.good.png"></img>
+                                </div>
+				</div>
+                        </div>
+			<h3>Read Distribution</h3>
+                        <div class="container-fluid">
+				<div class="row">
+                                <div class="col-md-offset-2 col-md-4">
+                                        <h4>Bad Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/read_distrib.bad.png"></img>
+                                </div>
+                                <div class="col-md-4">
+                                        <h4>Good Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/read_distrib.good.png"></img>
+                                </div>
+				</div>
+                        </div>
+			<h3>rRNA Removal</h3>
+                        <div class="container-fluid">
+                                <div class="row">
+                                <div class="col-md-offset-2 col-md-4">
+                                        <h4>Bad Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/rRNA_removal.bad.png"></img>
+                                </div>
+                                <div class="col-md-4">
+                                        <h4>Good Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/rRNA_removal.good.png"></img>
+                                </div>
+                                </div>
+                        </div>  
+			<h3>Gene-body Coverage (Line-Plot)</h3>
+                        <div class="container-fluid">
+                                <div class="row">
+                                <div class="col-md-offset-2 col-md-4">
+                                        <h4>Bad Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/gb_lineplot.bad.png"></img>
+                                </div>
+                                <div class="col-md-4">
+                                        <h4>Good Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/gb_lineplot.good.png"></img>
+                                </div>
+                                </div>
+                        </div>  
+			<h3>Gene-body Coverage (Heatmap)</h3>
+                        <div class="container-fluid">
+                                <div class="row">
+                                <div class="col-md-offset-2 col-md-4">
+                                        <h4>Bad Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/gb_heatmap.bad.png"></img>
+                                </div>
+                                <div class="col-md-4">
+                                        <h4>Good Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/gb_heatmap.good.png"></img>
+                                </div>
+                                </div>
+                        </div>  
+			<h3>Pricipal Component Analysis (PCA)</h3>
+                        <div class="container-fluid">
+                                <div class="row">
+                                <div class="col-md-offset-2 col-md-4">
+                                        <h4>Bad Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/pca.bad.png"></img>
+                                </div>
+                                <div class="col-md-4">
+                                        <h4>Good Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/pca.good.png"></img>
+                                </div>
+                                </div>
+                        </div>  
+			<h3>Sample-Sample Correlation Heatmap</h3>
+                        <div class="container-fluid">
+                                <div class="row">
+                                <div class="col-md-offset-2 col-md-4">
+                                        <h4>Bad Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/ss.bad.png"></img>
+                                </div>
+                                <div class="col-md-4">
+                                        <h4>Good Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/ss.good.png"></img>
+                                </div>
+                                </div>
+                        </div>  
+			<h3>Sample-Feature Correlation Heatmap</h3>
+                        <div class="container-fluid">
+                                <div class="row">
+                                <div class="col-md-offset-2 col-md-4">
+                                        <h4>Bad Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/sf.bad.png"></img>
+                                </div>
+                                <div class="col-md-4">
+                                        <h4>Good Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/sf.good.png"></img>
+                                </div>
+                                </div>
+                        </div>
+			<h3>Differential Gene Expression</h3>
+                        <div class="container-fluid">
+                                <div class="row">
+                                <div class="col-md-offset-2 col-md-4">
+                                        <h4>Bad Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/de.bad.png"></img>
+                                </div>
+                                <div class="col-md-4">
+                                        <h4>Good Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/de.good.png"></img>
+                                </div>
+                                </div>
+                        </div>
+			<h3>Volcano plots</h3>
+                        <div class="container-fluid">
+                                <div class="row">
+                                <div class="col-md-offset-2 col-md-4">
+                                        <h4>Bad Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/volcano.bad.png"></img>
+                                </div>
+                                <div class="col-md-4">
+                                        <h4>Good Data</h4>
+					<img class="img-thumbnail" src="./images/viper_images/volcano.good.png"></img>
+                                </div>
+                                </div>
+                        </div>
+                </div>
+        </body>
+</html>

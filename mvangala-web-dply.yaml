@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
       - name: mvangalaweb
-        image: docker.io/mvangala/mvangala-web:v1
+        image: docker.io/mvangala/mvangala-web:v2
         ports:
         - containerPort: 80

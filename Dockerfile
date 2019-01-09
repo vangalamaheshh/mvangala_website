@@ -1,10 +1,10 @@
 #############################
 # Dockerfile to build Nginx Installed containers
-# Based on Ubuntu 14.04
+# Based on Ubuntu 18.04
 #############################
 
 #set the base image to ubuntu
-FROM ubuntu:14.04
+FROM ubuntu:18.04
 
 # File Author / Maintainer
 MAINTAINER Mahesh Vangala <vangalamaheshh@gmail.com>
@@ -15,12 +15,16 @@ MAINTAINER Mahesh Vangala <vangalamaheshh@gmail.com>
 #RUN echo "deb http://archive.ubuntu.com/ubuntu/ trusty main universe" >> /etc/apt/sources.list
 
 #update the repository
-RUN apt-get update
+RUN apt-get update -y
 #RUN apt-get -y upgrade
 #install necessary tools
-RUN apt-get -y install vim curl dialog net-tools
+RUN apt-get -y install software-properties-common vim curl dialog net-tools nginx
 
-RUN apt-get -y install nginx
+RUN add-apt-repository ppa:certbot/certbot
+
+RUN apt-get update -y
+
+RUN apt-get install -y python-certbot-nginx
 
 COPY nginx.conf /etc/nginx/nginx.conf
 

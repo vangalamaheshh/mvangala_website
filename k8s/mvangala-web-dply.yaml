@@ -11,6 +11,15 @@ spec:
     spec:
       containers:
       - name: mvangalaweb
-        image: docker.io/mvangala/mvangala-web:v2
+        image: docker.io/mvangala/mvangala-web:latest
         ports:
         - containerPort: 80
+        - containerPort: 443
+        volumeMounts:
+        - mountPath: /etc/letsencrypt
+          name: ssl-disk
+      volumes:
+      - name: ssl-disk
+        gcePersistentDisk:
+          pdName: mvangala-web-ssl-disk
+          fsType: ext4

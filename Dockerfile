@@ -30,8 +30,6 @@ COPY nginx.conf /etc/nginx/nginx.conf
 
 COPY html /var/www/html
 
-RUN echo "\ndaemon off;" >> /etc/nginx/nginx.conf
-
 EXPOSE 80
 
 EXPOSE 443
